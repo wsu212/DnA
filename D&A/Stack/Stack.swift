@@ -8,23 +8,10 @@
 
 import Foundation
 
-class Stack<T> {
-    
-    var values: [T]
-    
-    init(values: [T]) {
-        self.values = values
-    }
-    
-    func push(_ value: T) {
-        self.values.append(value)
-    }
-    
-    func pop() {
-        self.values.removeLast()
-    }
-    
-    func isEmpty() -> Bool {
-        return self.values.isEmpty
-    }
+protocol Stack {
+    associatedtype Element
+    var values: [Element] { get set }
+    var isEmpty: Bool { get }
+    func push(_ value: Element)
+    func pop()
 }
