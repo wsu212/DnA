@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040D46A6223B3F8C004F102B /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D46A5223B3F8C004F102B /* TreeNode.swift */; };
+		040D46A8223B41C5004F102B /* Traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D46A7223B41C5004F102B /* Traversal.swift */; };
+		040D46AA223B4422004F102B /* BinaryTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D46A9223B4422004F102B /* BinaryTraversal.swift */; };
+		040D46AC223B482D004F102B /* BinaryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D46AB223B482D004F102B /* BinaryNode.swift */; };
 		04A5048B223B33CC0064B6EA /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5048A223B33CC0064B6EA /* Node.swift */; };
 		04A5048D223B34820064B6EA /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5048C223B34820064B6EA /* LinkedList.swift */; };
 		04EBC61C223B0D3C00CFCD03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBC61B223B0D3C00CFCD03 /* AppDelegate.swift */; };
@@ -30,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040D46A5223B3F8C004F102B /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		040D46A7223B41C5004F102B /* Traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Traversal.swift; sourceTree = "<group>"; };
+		040D46A9223B4422004F102B /* BinaryTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTraversal.swift; sourceTree = "<group>"; };
+		040D46AB223B482D004F102B /* BinaryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryNode.swift; sourceTree = "<group>"; };
 		04A5048A223B33CC0064B6EA /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		04A5048C223B34820064B6EA /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		04EBC618223B0D3C00CFCD03 /* D&A.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "D&A.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +72,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040D46A4223B3F84004F102B /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				040D46A5223B3F8C004F102B /* TreeNode.swift */,
+				040D46AB223B482D004F102B /* BinaryNode.swift */,
+				040D46A7223B41C5004F102B /* Traversal.swift */,
+				040D46A9223B4422004F102B /* BinaryTraversal.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
 		04A50489223B33AF0064B6EA /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				04EBC61B223B0D3C00CFCD03 /* AppDelegate.swift */,
+				040D46A4223B3F84004F102B /* Tree */,
 				04A50489223B33AF0064B6EA /* LinkedList */,
 				04EBC63E223B103300CFCD03 /* Queue */,
 				04EBC63B223B0DE900CFCD03 /* Stack */,
@@ -234,11 +254,15 @@
 			files = (
 				04A5048B223B33CC0064B6EA /* Node.swift in Sources */,
 				04EBC63D223B0DF600CFCD03 /* Stack.swift in Sources */,
+				040D46A8223B41C5004F102B /* Traversal.swift in Sources */,
 				04EBC640223B103A00CFCD03 /* Queue.swift in Sources */,
 				04EBC61C223B0D3C00CFCD03 /* AppDelegate.swift in Sources */,
 				04EBC642223B117E00CFCD03 /* QueueArray.swift in Sources */,
+				040D46A6223B3F8C004F102B /* TreeNode.swift in Sources */,
+				040D46AC223B482D004F102B /* BinaryNode.swift in Sources */,
 				04EBC644223B122C00CFCD03 /* StackArray.swift in Sources */,
 				04A5048D223B34820064B6EA /* LinkedList.swift in Sources */,
+				040D46AA223B4422004F102B /* BinaryTraversal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
