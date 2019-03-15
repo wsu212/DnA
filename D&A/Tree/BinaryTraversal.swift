@@ -9,8 +9,8 @@
 import Foundation
 
 protocol BinaryTraversal {
-    associatedtype Element
-    func inOrder(visit: (Element) -> Void)
-    func preOrder(visit: (Element) -> Void)
-    func postOrder(visit: (Element) -> Void)
+    associatedtype Node
+    func inOrder(visit: (Node) -> Void)
+    func preOrder(visit: (Node) -> Void)
+    func postOrder(visit: (Node) -> Void)
 }
