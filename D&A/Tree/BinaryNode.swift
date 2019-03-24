@@ -13,6 +13,8 @@ class BinaryNode<T> {
     var left: BinaryNode?
     var right: BinaryNode?
     
+    var min: BinaryNode { return left?.min ?? self }
+    
     init(value: T) {
         self.value = value
     }

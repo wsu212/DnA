@@ -11,6 +11,9 @@
 		040D46A8223B41C5004F102B /* Traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D46A7223B41C5004F102B /* Traversal.swift */; };
 		040D46AA223B4422004F102B /* BinaryTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D46A9223B4422004F102B /* BinaryTraversal.swift */; };
 		040D46AC223B482D004F102B /* BinaryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D46AB223B482D004F102B /* BinaryNode.swift */; };
+		048F98412244643F00EEA7A1 /* LinkedListChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F98402244643F00EEA7A1 /* LinkedListChallenges.swift */; };
+		04989C37223BE5C700733E3B /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04989C36223BE5C700733E3B /* BinarySearchTree.swift */; };
+		04989C39223BEA7E00733E3B /* BST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04989C38223BEA7E00733E3B /* BST.swift */; };
 		04A5048B223B33CC0064B6EA /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5048A223B33CC0064B6EA /* Node.swift */; };
 		04A5048D223B34820064B6EA /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5048C223B34820064B6EA /* LinkedList.swift */; };
 		04EBC61C223B0D3C00CFCD03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBC61B223B0D3C00CFCD03 /* AppDelegate.swift */; };
@@ -38,6 +41,9 @@
 		040D46A7223B41C5004F102B /* Traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Traversal.swift; sourceTree = "<group>"; };
 		040D46A9223B4422004F102B /* BinaryTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTraversal.swift; sourceTree = "<group>"; };
 		040D46AB223B482D004F102B /* BinaryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryNode.swift; sourceTree = "<group>"; };
+		048F98402244643F00EEA7A1 /* LinkedListChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListChallenges.swift; sourceTree = "<group>"; };
+		04989C36223BE5C700733E3B /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
+		04989C38223BEA7E00733E3B /* BST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BST.swift; sourceTree = "<group>"; };
 		04A5048A223B33CC0064B6EA /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		04A5048C223B34820064B6EA /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		04EBC618223B0D3C00CFCD03 /* D&A.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "D&A.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,8 +83,10 @@
 			children = (
 				040D46A5223B3F8C004F102B /* TreeNode.swift */,
 				040D46AB223B482D004F102B /* BinaryNode.swift */,
+				04989C36223BE5C700733E3B /* BinarySearchTree.swift */,
 				040D46A7223B41C5004F102B /* Traversal.swift */,
 				040D46A9223B4422004F102B /* BinaryTraversal.swift */,
+				04989C38223BEA7E00733E3B /* BST.swift */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -88,6 +96,7 @@
 			children = (
 				04A5048A223B33CC0064B6EA /* Node.swift */,
 				04A5048C223B34820064B6EA /* LinkedList.swift */,
+				048F98402244643F00EEA7A1 /* LinkedListChallenges.swift */,
 			);
 			path = LinkedList;
 			sourceTree = "<group>";
@@ -256,10 +265,13 @@
 				04EBC63D223B0DF600CFCD03 /* Stack.swift in Sources */,
 				040D46A8223B41C5004F102B /* Traversal.swift in Sources */,
 				04EBC640223B103A00CFCD03 /* Queue.swift in Sources */,
+				048F98412244643F00EEA7A1 /* LinkedListChallenges.swift in Sources */,
 				04EBC61C223B0D3C00CFCD03 /* AppDelegate.swift in Sources */,
+				04989C39223BEA7E00733E3B /* BST.swift in Sources */,
 				04EBC642223B117E00CFCD03 /* QueueArray.swift in Sources */,
 				040D46A6223B3F8C004F102B /* TreeNode.swift in Sources */,
 				040D46AC223B482D004F102B /* BinaryNode.swift in Sources */,
+				04989C37223BE5C700733E3B /* BinarySearchTree.swift in Sources */,
 				04EBC644223B122C00CFCD03 /* StackArray.swift in Sources */,
 				04A5048D223B34820064B6EA /* LinkedList.swift in Sources */,
 				040D46AA223B4422004F102B /* BinaryTraversal.swift in Sources */,
