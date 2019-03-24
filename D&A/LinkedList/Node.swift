@@ -10,9 +10,19 @@ import Foundation
 
 class Node<T> {
     var value: T
-    var next: Node<T>?
+    var next: Node?
     
     init(value: T) {
         self.value = value
+    }
+}
+
+extension Node: CustomStringConvertible {
+    
+    public var description: String {
+        guard let next = next else {
+            return "\(value)"
+        }
+        return "\(value) -> " + String(describing: next) + " "
     }
 }

@@ -24,25 +24,62 @@ class LinkedList<T> {
         }
     }
     
-    func node(at index: Int) -> Node<T>? {
-        guard isEmpty == false else { return nil }
-        var currentIndex = 0
-        var currentNode = head
-        
-        while currentNode != nil && currentIndex < index  {
-            currentNode = currentNode?.next
-            currentIndex += 1
-        }
-        return currentNode
-    }
-    
     func push(_ value: T) {
         let node = Node<T>(value: value)
+        
         if isEmpty {
             head = node
         } else {
             node.next = head
             head = node
         }
+    }
+    
+    func node(at index: Int) -> Node<T>? {
+        var currentNode = head
+        var currentIndex = 0
+        
+        while currentIndex < index, currentNode != nil {
+            currentNode = currentNode?.next
+            currentIndex += 1
+        }
+        
+        return currentNode
+    }
+}
+
+extension LinkedList: CustomStringConvertible {
+    
+    var description: String {
+        guard let head = head else {
+            return "Empty list"
+        }
+        return String(describing: head)
+    }
+}
+
+extension LinkedList: LinkedListChallenges {
+    
+    func reversed() -> LinkedList<T> {
+        tail = head
+        
+        var previousNode = head
+        var currentNode = head?.next
+        previousNode?.next = nil
+        
+        while currentNode != nil {
+            let nextNode = currentNode?.next
+            currentNode?.next = previousNode
+            previousNode = currentNode
+            currentNode = nextNode
+        }
+        
+        head = previousNode
+        
+        return self
+    }
+    
+    func middleNode() -> Node<T>? {
+        return nil
     }
 }
