@@ -16,6 +16,11 @@
 		04989C39223BEA7E00733E3B /* BST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04989C38223BEA7E00733E3B /* BST.swift */; };
 		04A5048B223B33CC0064B6EA /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5048A223B33CC0064B6EA /* Node.swift */; };
 		04A5048D223B34820064B6EA /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5048C223B34820064B6EA /* LinkedList.swift */; };
+		04C15E0D2251974300752EBD /* EdgeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C15E0C2251974300752EBD /* EdgeType.swift */; };
+		04C15E0F2251975F00752EBD /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C15E0E2251975F00752EBD /* Graph.swift */; };
+		04C15E11225197B400752EBD /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C15E10225197B400752EBD /* Vertex.swift */; };
+		04C15E13225198F900752EBD /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C15E12225198F900752EBD /* Edge.swift */; };
+		04C15E1522519A5900752EBD /* AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C15E1422519A5900752EBD /* AdjacencyList.swift */; };
 		04EBC61C223B0D3C00CFCD03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBC61B223B0D3C00CFCD03 /* AppDelegate.swift */; };
 		04EBC623223B0D3D00CFCD03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EBC622223B0D3D00CFCD03 /* Assets.xcassets */; };
 		04EBC626223B0D3D00CFCD03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EBC624223B0D3D00CFCD03 /* LaunchScreen.storyboard */; };
@@ -46,6 +51,11 @@
 		04989C38223BEA7E00733E3B /* BST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BST.swift; sourceTree = "<group>"; };
 		04A5048A223B33CC0064B6EA /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		04A5048C223B34820064B6EA /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		04C15E0C2251974300752EBD /* EdgeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeType.swift; sourceTree = "<group>"; };
+		04C15E0E2251975F00752EBD /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		04C15E10225197B400752EBD /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		04C15E12225198F900752EBD /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		04C15E1422519A5900752EBD /* AdjacencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyList.swift; sourceTree = "<group>"; };
 		04EBC618223B0D3C00CFCD03 /* D&A.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "D&A.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EBC61B223B0D3C00CFCD03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04EBC622223B0D3D00CFCD03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,6 +111,18 @@
 			path = LinkedList;
 			sourceTree = "<group>";
 		};
+		04C15E0B2251972600752EBD /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				04C15E0E2251975F00752EBD /* Graph.swift */,
+				04C15E0C2251974300752EBD /* EdgeType.swift */,
+				04C15E12225198F900752EBD /* Edge.swift */,
+				04C15E10225197B400752EBD /* Vertex.swift */,
+				04C15E1422519A5900752EBD /* AdjacencyList.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
 		04EBC60F223B0D3C00CFCD03 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				04EBC61B223B0D3C00CFCD03 /* AppDelegate.swift */,
+				04C15E0B2251972600752EBD /* Graph */,
 				040D46A4223B3F84004F102B /* Tree */,
 				04A50489223B33AF0064B6EA /* LinkedList */,
 				04EBC63E223B103300CFCD03 /* Queue */,
@@ -211,9 +234,11 @@
 				TargetAttributes = {
 					04EBC617223B0D3C00CFCD03 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					04EBC62B223B0D3D00CFCD03 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 04EBC617223B0D3C00CFCD03;
 					};
 				};
@@ -261,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C15E11225197B400752EBD /* Vertex.swift in Sources */,
 				04A5048B223B33CC0064B6EA /* Node.swift in Sources */,
 				04EBC63D223B0DF600CFCD03 /* Stack.swift in Sources */,
 				040D46A8223B41C5004F102B /* Traversal.swift in Sources */,
@@ -268,7 +294,11 @@
 				048F98412244643F00EEA7A1 /* LinkedListChallenges.swift in Sources */,
 				04EBC61C223B0D3C00CFCD03 /* AppDelegate.swift in Sources */,
 				04989C39223BEA7E00733E3B /* BST.swift in Sources */,
+				04C15E13225198F900752EBD /* Edge.swift in Sources */,
 				04EBC642223B117E00CFCD03 /* QueueArray.swift in Sources */,
+				04C15E0F2251975F00752EBD /* Graph.swift in Sources */,
+				04C15E0D2251974300752EBD /* EdgeType.swift in Sources */,
+				04C15E1522519A5900752EBD /* AdjacencyList.swift in Sources */,
 				040D46A6223B3F8C004F102B /* TreeNode.swift in Sources */,
 				040D46AC223B482D004F102B /* BinaryNode.swift in Sources */,
 				04989C37223BE5C700733E3B /* BinarySearchTree.swift in Sources */,
@@ -437,7 +467,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.weilunsu.D-A";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -455,7 +485,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.weilunsu.D-A";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -475,7 +505,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.weilunsu.D-ATests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/D&A.app/D&A";
 			};
@@ -496,7 +526,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.weilunsu.D-ATests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/D&A.app/D&A";
 			};
